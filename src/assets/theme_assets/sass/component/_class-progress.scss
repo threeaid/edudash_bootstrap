@@ -1,0 +1,123 @@
+//Practice Class
+.practice-class {
+  gap: 15px;
+  &:not(:last-child){
+    margin-bottom: 25px;
+  }
+  &__img {
+    width: 80px;
+    height: 80px;
+    border-radius: 14px;
+    padding: 15px;
+    position: relative;
+    z-index: 0;
+    &:after{
+      content: '';
+      position: absolute;
+      background-color: currentColor;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      opacity: .10;
+      border-radius: 14px;
+      z-index: -1;
+    }
+    img{
+      max-width: 100%;
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+  .title {
+    font-size: 15px;
+    font-weight: 500;
+    line-height: calc(20px / 15px);
+    color: var(--color-dark);
+  }
+  .class-top{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: calc(21px / 14px);
+    color: var(--color-light);
+    padding: 10px 0 8px;
+    justify-content: space-between;
+  }
+
+  &__content {
+    flex: 1;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    .progress-bar {
+      width: 0;
+      animation: progress 1.5s ease-in-out forwards;
+    }
+  }
+
+  &__fw-normal {
+    font-size: 20px;
+  }
+}
+
+@keyframes progress {
+  from {
+    width: 0;
+  }
+} 
+@keyframes show  {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+//Daily practice
+.dl-practise {
+  &-wrapper{
+    display: inline-flex;
+    gap:17px 20px;
+    width: 100%;
+    height: 100%;
+    flex-wrap: wrap;
+  }
+  flex: 45%;
+  min-height: 158px;
+  border-radius: 10px;
+  text-align: center;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  z-index: 0;
+  &:after{
+    content: '';
+      position: absolute;
+      background-color: currentColor;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      opacity: .10;
+      border-radius: 10px;
+      z-index: -1;
+  }
+  &__img{
+    svg{
+      path{
+        fill: currentColor;
+      }
+    }
+  }
+  .title{
+    font-size: 20px;
+    line-height: calc(24px / 20px);
+    font-weight: 600;
+    color: var(--color-dark);
+    margin-top: 13px;
+    margin-bottom: 0;
+  }
+}

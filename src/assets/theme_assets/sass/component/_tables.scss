@@ -1,0 +1,98 @@
+
+
+
+/* table /.traffic channel */
+.table--default {
+  &.body-px-25 {
+
+    th:first-child,
+    td:first-child {
+      padding-left: 25px;
+    }
+
+    th:last-child,
+    td:last-child {
+      padding-right: 25px;
+    }
+  }
+
+  &.tr-hbr-0 {
+    tbody {
+      tr {
+        background-color: transparent !important;
+      }
+    }
+
+  }
+
+  th {
+    border-top: 0 none !important;
+    border-bottom: 0 none !important;
+    font-size: 14px;
+    font-weight: 500;
+    white-space: nowrap;
+    color: var(--color-dark);
+  }
+
+  tr {
+
+    th:first-child,
+    td:first-child {
+      border-left: 0 none;
+    }
+
+    th:last-child,
+    td:last-child {
+      border-right: 0 none;
+    }
+  }
+
+  tbody {
+    tr {
+      transition: var(--transition);
+      color: var(--color-gray);
+
+      &:last-child {
+        border-bottom: 1px solid var(--border-normal);
+      }
+    }
+
+    tr td:not(:first-child) {
+      text-align: right;
+    }
+  }
+
+  thead tr th:not(:first-child) {
+    text-align: right;
+  }
+
+  td {
+    font-size: 14px;
+    vertical-align: middle;
+  }
+
+  th,
+  td {
+    padding: 16px 15px;
+  }
+}
+
+.table-borderless {
+  tr {
+    &:last-child {
+      border-bottom: 0 none !important;
+    }
+  }
+}
+
+.table> :not(:last-child)> :last-child>* {
+  border-bottom-color: var(--border-color);
+}
+
+.table>tbody {
+  vertical-align: middle;
+}
+
+.basic-table{
+  
+}

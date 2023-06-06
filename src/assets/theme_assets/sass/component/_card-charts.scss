@@ -1,0 +1,64 @@
+/* Course App */
+.ap-po-details {
+  padding: 41.50px 30px 41.50px;
+  box-shadow: 0 5px 20px rgba(var(--shadow6-rgba), 0.05);
+  background-color: var(--bg-white);
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+
+  &-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  &__titlebar {
+    p {
+      font-size: 16px;
+      line-height: calc(20px / 16px);
+      font-weight: 400;
+      color: var(--color-dark);
+      text-transform: capitalize;
+      margin-bottom: 4px
+    }
+
+    .numbers {
+      @include rfs(30px);
+      line-height: calc(38px / 30px);
+      font-weight: 600;
+      color: var(--color-dark);
+    }
+  }
+
+  &__icon-area {
+    display: flex;
+    align-items: center;
+  }
+
+  &__double-icon {
+    position: relative;
+    width: 50px;
+    height: 45px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    i {
+      @include rfs(50px);
+    }
+
+    .low-opacity {
+      position: absolute;
+      top: -34px;
+      left: 20px;
+
+      i {
+        color: var(--currentColor);
+        opacity: 0.05;
+      }
+    }
+  }
+}

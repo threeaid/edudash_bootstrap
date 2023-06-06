@@ -1,0 +1,190 @@
+/*------------------------------------*\
+    #-CSS Variables
+\*------------------------------------*/
+:root {
+
+    // Global color
+    --body:white;
+    --contents-bg:#F8F9FB;
+    --main-color:transparent;
+
+    /* Menu color*/
+    --color-menu: #{$gray};
+    --color-menu-hover: #{$secondary};
+    --color-menu-active: #{$secondary};
+    --color-menu-bg-opacity:rgb(89, 151, .10); 
+
+    // Header & Sidebar
+    --header-bg: var(--contents-bg);
+    --sidebar-bg: var(--bg-white);
+    --main-content:#F8F9FB;
+    --logo-wrapper-bg:white;
+    --logo-wrapper-border:#F1F2F6;
+
+
+    // button color
+    --color-add-listing-button-text: #{$white};
+    --color-add-listing-button-text-hover: #{$white};
+    --bgcolor-add-listing-button: #{$primary};
+    --bgcolor-add-listing-button-hover: #{$dark};
+
+    //Banner Color
+    --color-banner_title: #{$white};
+    --color-breadcrumb-link: #{$light};
+    --color-breadcrumb-link-hover: #{$secondary};
+    --color-breadcrumb_separator: #{$light};
+
+    //Footer color
+    --bgcolor-footer: #{$footer-dark};
+    --color-footer-divider: #{$footer-dark};
+    --color-footer-title: #{$white};
+    --color-footer-link-hover: #{$white};
+
+    // Main Color
+    --color-primary: #7811FF;
+    --color-secondary: #7811FF;
+    --color-success: #01B81A;
+    --color-info: #00AAFF;
+    --color-warning: #FA8B0C;
+    --color-danger: #FF0F0F;
+    --color-dark: #090E30;
+
+    --color-infos:#00E4EC;
+    --color-warnings:#FFBB00;
+    --color-dangers: #FF0F0F;
+    --color-purple:#A722F6;
+
+     //Main Bg color
+     --bg-primary: #7811FF;
+     --bg-success: #01B81A;
+     --bg-info: #00AAFF;
+     --bg-warning: #FA8B0C;
+     --bg-danger: #FF0F0F;
+     --bg-dark: #090E30;
+
+    // Hover Color
+    --bg-primary-hbr: #5D1CB2;
+    --bg-success-hbr: #0D811D;
+    --bg-info-hbr: #0787C7;
+    --bg-warning-hbr: #D9790A;
+    --bg-danger-hbr: #CB0000;
+    --bg-dark-hbr: #0A0613;
+    --bg-gray-hover: #343743;
+
+    --color-secondary-rgb: 120,17,255;
+    --color-primary-rgb: 120,17,255;
+    --color-success-rgb: 1, 184, 26;
+    --color-info-rgb: 0, 170, 255;
+    --color-warning-rgb: 250, 139, 12;
+    --color-danger-rgb: 255, 15, 15;
+    --color-dark-rgb: 17, 6, 38;
+    --color-primary-rgb-shadow: rgba(var(--color-primary-rgb), 0.20);
+
+    //Side Color
+    --color-white: #fff;
+    --color-gray: #525768;
+    --text-gray: var(-color-gray);
+    --color-light: #8C90A4;
+    --color-lighten: #ADB5D9;
+    --color-lighter: #F8F9FB;
+    --color-lighten-x: #5d658c;
+    --footer-dark: #353b58;
+    --color-deep: #eff0f3;
+    --color-normal: #f8f9fb;
+    --color-lighters: #f4f5f7;
+
+    --color-lighten-rgb:173, 181, 217;
+    --color-gray-x: #5A5F7D;
+    --body-color: #666d92;
+    --text-color: #666d92;
+    --light-gray: #8C90A4;
+    --light-gray-rgb: 140, 144, 164;
+
+    //border color
+    --border-normal: #f1f2f6;
+    --border-color: #E3E6EF;
+    --border-light:#C6D0DC;
+
+    // bg Color
+    --bg-normal: #F8F9FB;
+    --bg-lighters: var(--bg-lighter);
+    --bg-lighter: #f4f5f7;
+    --bg-deep: #eff0f3;
+    --bg-gray:#525768;
+    --bg-light:#8C90A4;
+    --bg-white:#fff;
+
+    --bg-normal-rgb: 248, 249, 251;
+    --bg-lighter-rgb: 244, 245, 247;
+    --bg-deep-rgb: 239, 240, 243;
+    --color-gray-rgb: 140, 144, 164;
+
+    // Rgba Color
+    --color-dark-rgb: #{39, 43, 65};
+    --color-white-rgb: #{255,255,255};
+    --box-shadow-color-rgb:146, 153, 184;
+
+    // Radius Size
+    --border-radius-xl: 10px;
+    --border-radius-md: 6px;
+    --border-radius-xs: 4px;
+
+    // social color
+    --color-facebook: #2366b8;
+    --color-twitter: #00abe4;
+    --color-pinterest: #ef1b25;
+    --color-gplus: #dc4e41;
+    --color-linkedin: #007cbc;
+    --color-tumblr: #35465c;
+    --color-vk: #4a76a8;
+    --color-youtube: #e32212;
+    --color-instagram: #9c27b0;
+    --color-ruby: #c2185b;
+    --color-google: #4285F4;
+
+    --color-facebook-rgb: 35, 102, 184;
+    --color-twitter-rgb: 0, 171, 228;
+    --color-pinterest-rgb: 239, 27, 37;
+    --color-gplus-rgb: 220, 78, 65;
+    --color-linkedin-rgb: 0, 124, 188;
+    --color-tumblr-rgb: 53, 70, 92;
+    --color-vk-rgb: 74, 118, 168;
+    --color-youtube-rgb: 227, 34, 18;
+    --color-instagram-rgb: 156, 39, 176;
+    --color-ruby-rgb: 194, 24, 91;
+    --color-google-rgb:66, 133, 244;
+    --color-infos-rgb:0, 228, 236;
+    --color-warnings-rgb:255, 187, 0;
+    --color-dangers-rgb: 255, 15, 15;
+    --color-purple-rgb:167, 34, 246;
+
+    //currentColor
+    --currentColor:currentColor;
+
+    //transition
+    --transition:all 0.3s ease;
+
+    // chart
+
+    --gridLines_color:#E3E6EF;
+
+    //scrollbar
+    --scrollbarBG: var(--color-white);
+    --thumbBG: #eff0f3;
+
+    // input
+    --input-bg:var(--color-white);
+    --input-focus-bg:var(--color-white);
+
+    // tooltip
+    --tooltip-bg:var(--color-white);
+    --tooltip-arrow-color:var(--color-white);
+
+    // shadow
+    --shadow2:#9299B80D;
+    --shadow3:#9299B81A;
+    --shadow4:#9299B833;
+    --shadow5:#9299b826;
+    --shadow6-rgba:6173,181,217;
+
+}

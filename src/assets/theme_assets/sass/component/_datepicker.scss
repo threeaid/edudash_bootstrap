@@ -1,0 +1,148 @@
+// Date-picker 
+
+.ui-datepicker {
+  background-color: rgba(var(--color-primary-rgb), 0.10);
+  box-shadow:none;
+  border-radius: 0.5rem;
+  padding:14px 15px 14px;
+  z-index: 1;
+  display: none;
+
+  @include sm {
+    width: auto !important;
+  }
+  &-month {
+    border: none;
+    color: var(--text-color);
+  }
+  &-year {
+    border: none;
+    color: var(--text-color);
+  }
+
+  &-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .ui-datepicker-title{
+      font-size: 16px;
+      font-weight: 500;
+      line-height: calc(20px / 16px);
+      color: var(--color-dark);
+      padding: 0;
+      margin: 0;
+      .ui-datepicker-year,
+      .ui-datepicker-month{
+        color: var(--currentColor);
+      }
+    }
+    a {
+      span {
+        display: none;
+      }
+
+      &.ui-corner-all {
+        cursor: pointer;
+        width: 2rem;
+        height: 2rem;
+        margin: 0.5rem;
+        border-radius: 0.5rem;
+        color: var(--color-lighten);
+        font-size:12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &:hover{
+          color: var(--color-dark);
+        }
+      }
+
+      &.ui-datepicker-prev {
+        &::after {
+          font-family: "Line Awesome Free";
+          font-weight: 900;
+          content: "\f104";
+        }
+      }
+
+      &.ui-datepicker-next {
+        order: 1;
+        &::after {
+          font-family: "Line Awesome Free";
+          font-weight: 900;
+          content: "\f105";
+        }
+      }
+    }
+  }
+
+  &-title {
+    text-align: center;
+    line-height: 2rem;
+    margin-bottom: 0.25rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    padding-bottom: 0.25rem;
+  }
+
+  &-week-col {
+    color: var(--color-dark);
+    font-weight: 400;
+    font-size: 0.75rem;
+  }
+}
+
+
+.date-picker__calendar {
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+  }
+
+  thead {
+    th {
+      padding: 0.25rem 0;
+      text-align: center;
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--color-light);
+    }
+  }
+
+  tbody {
+    td {
+      text-align: center;
+      padding: 0;
+
+      a {
+        font-size: 12px;
+        font-weight: 400;
+        color: var(--color-gray);
+        display: block;
+        border-radius: 50%;
+        line-height: 2rem;
+        transition: 0.3s;
+        text-decoration: none;
+        width: 35px;
+        height: 35px;
+        border: 1px solid transparent;
+        margin: 2.50px auto;
+
+        &:hover {
+          border: 1px solid var(--color-primary);
+        }
+
+        &.ui-state-active {
+          color: var(--color-primary);
+          border: 1px solid var(--color-primary);
+        }
+
+        &.ui-state-highlight {
+          background: var(--color-primary);
+          color: var(--color-white);
+        }
+      }
+    }
+  }
+}

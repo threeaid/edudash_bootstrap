@@ -1,0 +1,39 @@
+.calendar-box{
+    width: 100%;
+    gap:15px;
+    &__item{
+        justify-content: center;
+        align-items: center;
+        flex: 45%;
+        height: 105px;
+        gap: 10px;
+        position: relative;
+        z-index: 0;
+        &:after{
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: currentColor;
+            opacity: .10;
+            z-index: -1;
+            border-radius: 10px;
+        }
+    }
+    &__content{
+       .title{
+        font-size: 16px;
+        line-height: calc(20px / 16px);
+        font-weight: 500;
+        color: var(--color-dark);
+        margin-bottom: 6px;
+       }
+       .time{
+        font-size: 14px;
+        line-height: calc(20px / 14px);
+        font-weight: 400;
+        color: currentColor;
+        margin-bottom: 0;
+       }
+    }
+}
